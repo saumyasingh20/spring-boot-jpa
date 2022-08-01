@@ -52,7 +52,7 @@ public class ProductServiceImplementation implements ProductService{
 
     @Override
     public List<Product> getProductsByName(String name) {
-        return productRepository.findByName(name);
+        return productRepository.findByNameContaining(name);
     }
 
     @Override
